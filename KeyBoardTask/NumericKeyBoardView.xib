@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="ExtensionKeyBoard" customModuleProvider="target">
+            <connections>
+                <outlet property="Label" destination="Lx8-6v-9zM" id="QNc-fb-Zeg"/>
+                <outlet property="firstView" destination="5Tk-EZ-r79" id="Dpx-Dq-rsd"/>
+                <outlet property="forwardImageView" destination="Dge-NJ-wiI" id="WuO-Jv-GcY"/>
+                <outlet property="myView" destination="iN0-l3-epB" id="wno-PN-41N"/>
+                <outletCollection property="numberBtn" destination="zRm-p5-Zpe" collectionClass="NSMutableArray" id="JiR-Fm-ibi"/>
+                <outletCollection property="numberBtn" destination="byZ-BV-Oti" collectionClass="NSMutableArray" id="K7w-5c-t8E"/>
+                <outletCollection property="numberBtn" destination="dKa-B9-GnV" collectionClass="NSMutableArray" id="tBC-r5-jcc"/>
+                <outletCollection property="numberBtn" destination="503-SH-asn" collectionClass="NSMutableArray" id="fUE-eB-fZ4"/>
+                <outletCollection property="numberBtn" destination="6zC-XN-VHB" collectionClass="NSMutableArray" id="ZHA-XH-96b"/>
+                <outletCollection property="numberBtn" destination="I7x-Bx-fma" collectionClass="NSMutableArray" id="gG3-ga-MsL"/>
+                <outletCollection property="numberBtn" destination="8gB-QT-oBB" collectionClass="NSMutableArray" id="45j-j1-NO6"/>
+                <outletCollection property="numberBtn" destination="kTE-i3-Cbx" collectionClass="NSMutableArray" id="QSa-7Y-6j9"/>
+                <outletCollection property="numberBtn" destination="QaC-9W-nPD" collectionClass="NSMutableArray" id="9Po-n5-WaQ"/>
+                <outletCollection property="numberBtn" destination="6it-Gk-gNr" collectionClass="NSMutableArray" id="jAN-Q7-Zn8"/>
+                <outletCollection property="numberBtn" destination="EGP-9z-fOU" collectionClass="NSMutableArray" id="xFh-H3-3O6"/>
+                <outletCollection property="numberBtn" destination="dze-cY-go4" collectionClass="NSMutableArray" id="3UY-7T-Rsc"/>
+                <outletCollection property="shuffleNum" destination="8gB-QT-oBB" collectionClass="NSMutableArray" id="fkC-Sb-aCN"/>
+                <outletCollection property="shuffleNum" destination="zRm-p5-Zpe" collectionClass="NSMutableArray" id="mhJ-XX-fdZ"/>
+                <outletCollection property="shuffleNum" destination="6it-Gk-gNr" collectionClass="NSMutableArray" id="Dcl-zV-oxe"/>
+                <outletCollection property="shuffleNum" destination="QaC-9W-nPD" collectionClass="NSMutableArray" id="onN-Gl-8bp"/>
+                <outletCollection property="shuffleNum" destination="kTE-i3-Cbx" collectionClass="NSMutableArray" id="9L1-Ng-65r"/>
+                <outletCollection property="shuffleNum" destination="dKa-B9-GnV" collectionClass="NSMutableArray" id="cAD-oJ-pol"/>
+                <outletCollection property="shuffleNum" destination="6zC-XN-VHB" collectionClass="NSMutableArray" id="K37-vJ-OXj"/>
+                <outletCollection property="shuffleNum" destination="I7x-Bx-fma" collectionClass="NSMutableArray" id="71B-bE-OEi"/>
+                <outletCollection property="shuffleNum" destination="503-SH-asn" collectionClass="NSMutableArray" id="h0H-b0-4db"/>
+                <outletCollection property="shuffleNum" destination="byZ-BV-Oti" collectionClass="NSMutableArray" id="gV4-3F-KAT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="533" height="439"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="gvl-wW-yK5">
+                    <rect key="frame" x="10" y="0.0" width="513" height="379"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rXO-Yo-yQ5">
+                            <rect key="frame" x="0.0" y="0.0" width="513" height="93.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8gB-QT-oBB">
+                                    <rect key="frame" x="0.0" y="0.0" width="164.5" height="93.5"/>
+                                    <color key="backgroundColor" red="0.12156862745098039" green="0.11372549019607843" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title=" 1">
+                                        <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="42"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="EXR-mq-zeN"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRm-p5-Zpe">
+                                    <rect key="frame" x="174.5" y="0.0" width="164" height="93.5"/>
+                                    <color key="backgroundColor" red="0.1176470588" green="0.1137254902" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="2" buttonSize="small">
+                                        <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="42"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="ol6-nm-6QL"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6it-Gk-gNr">
+                                    <rect key="frame" x="348.5" y="0.0" width="164.5" height="93.5"/>
+                                    <color key="backgroundColor" red="0.1176470588" green="0.1137254902" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="3">
+                                        <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="42"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="zcS-l6-aES"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fhj-YH-5kr">
+                            <rect key="frame" x="0.0" y="95.5" width="513" height="93"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="byZ-BV-Oti">
+                                    <rect key="frame" x="0.0" y="0.0" width="164.5" height="93"/>
+                                    <color key="backgroundColor" red="0.12156862745098039" green="0.11372549019607843" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title=" 4">
+                                        <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="42"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="uGZ-bE-zR7"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dKa-B9-GnV">
+                                    <rect key="frame" x="174.5" y="0.0" width="164" height="93"/>
+                                    <color key="backgroundColor" red="0.1176470588" green="0.1137254902" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="5">
+                                        <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="35"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="tgf-TV-P0h"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaC-9W-nPD">
+                                    <rect key="frame" x="348.5" y="0.0" width="164.5" height="93"/>
+                                    <color key="backgroundColor" red="0.1176470588" green="0.1137254902" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="6">
+                                        <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="42"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="yLz-Jg-VYZ"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="dKa-B9-GnV" firstAttribute="centerX" secondItem="fhj-YH-5kr" secondAttribute="centerX" id="hRG-OD-99d"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fov-Ev-gnC">
+                            <rect key="frame" x="0.0" y="190.5" width="513" height="93.5"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="503-SH-asn">
+                                    <rect key="frame" x="0.0" y="0.0" width="164.5" height="93.5"/>
+                                    <color key="backgroundColor" red="0.12156862745098039" green="0.11372549019607843" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title=" 7">
+                                        <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="38"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="8Af-LX-hUk"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zC-XN-VHB">
+                                    <rect key="frame" x="174.5" y="0.0" width="164" height="93.5"/>
+                                    <color key="backgroundColor" red="0.1176470588" green="0.1137254902" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="8">
+                                        <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="42"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="hyP-Y6-hGg"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kTE-i3-Cbx">
+                                    <rect key="frame" x="348.5" y="0.0" width="164.5" height="93.5"/>
+                                    <color key="backgroundColor" red="0.1176470588" green="0.1137254902" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="7">
+                                        <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="42"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="9Wt-9A-xgw"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="6zC-XN-VHB" firstAttribute="centerX" secondItem="fov-Ev-gnC" secondAttribute="centerX" id="312-YE-SYZ"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ghh-wb-d2c">
+                            <rect key="frame" x="0.0" y="286" width="513" height="93"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dze-cY-go4">
+                                    <rect key="frame" x="0.0" y="0.0" width="164.5" height="93"/>
+                                    <color key="backgroundColor" red="0.1058823529" green="0.1019607843" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title=" .">
+                                        <fontDescription key="titleFontDescription" name="Verdana-Bold" family="Verdana" pointSize="35"/>
+                                        <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7x-Bx-fma">
+                                    <rect key="frame" x="174.5" y="0.0" width="164" height="93"/>
+                                    <color key="backgroundColor" red="0.1176470588" green="0.1137254902" blue="0.14117647059999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="0">
+                                        <fontDescription key="titleFontDescription" name="Verdana" family="Verdana" pointSize="42"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="buttonTapped:" destination="-1" eventType="touchUpInside" id="HdC-fG-BlX"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGP-9z-fOU">
+                                    <rect key="frame" x="348.5" y="0.0" width="164.5" height="93"/>
+                                    <color key="backgroundColor" red="0.1058823529" green="0.1019607843" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title=" " cornerStyle="large">
+                                        <imageReference key="image" image="delete.backward" catalog="system" variableValue="1"/>
+                                        <backgroundConfiguration key="background"/>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="bold"/>
+                                        <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </buttonConfiguration>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="backSpaceTapped:" destination="-1" eventType="touchUpInside" id="hBq-I0-fUj"/>
+                                        <action selector="backSpaceTappedWithSender:" destination="-2" eventType="touchUpInside" id="59Z-dU-JEt"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Tk-EZ-r79" userLabel="first View">
+                    <rect key="frame" x="0.0" y="379" width="533" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Swipe to Send" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lx8-6v-9zM">
+                            <rect key="frame" x="192" y="16.5" width="148.5" height="29"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                            <color key="textColor" red="0.90588235289999997" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dge-NJ-wiI">
+                            <rect key="frame" x="20" y="3" width="50" height="54"/>
+                            <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="A9Y-oy-Xu8"/>
+                            </constraints>
+                            <imageReference key="image" image="chevron.forward.2" catalog="system" symbolScale="small"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBrownColor"/>
+                    <constraints>
+                        <constraint firstItem="Dge-NJ-wiI" firstAttribute="leading" secondItem="5Tk-EZ-r79" secondAttribute="leading" constant="20" id="A9m-Cq-CBk"/>
+                        <constraint firstItem="Dge-NJ-wiI" firstAttribute="height" secondItem="5Tk-EZ-r79" secondAttribute="height" id="GLs-MD-uWR"/>
+                        <constraint firstAttribute="height" constant="60" id="Ih0-Xt-rhu"/>
+                        <constraint firstItem="Dge-NJ-wiI" firstAttribute="centerY" secondItem="5Tk-EZ-r79" secondAttribute="centerY" id="cZu-b0-OCv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.10588235294117647" green="0.10196078431372549" blue="0.12549019607843137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gvl-wW-yK5" secondAttribute="trailing" constant="10" id="4Py-17-QQ2"/>
+                <constraint firstItem="gvl-wW-yK5" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="7WS-NE-lgE"/>
+                <constraint firstItem="gvl-wW-yK5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Hzf-CR-Ydk"/>
+                <constraint firstItem="5Tk-EZ-r79" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="LjA-pg-xFq"/>
+                <constraint firstItem="5Tk-EZ-r79" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="P7v-54-jBw"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gvl-wW-yK5" secondAttribute="bottom" constant="60" id="VKM-WM-yCa"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5Tk-EZ-r79" secondAttribute="bottom" id="hN6-hP-PXY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.maskToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="587.8125" y="-72.359154929577471"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chevron.forward.2" catalog="system" width="128" height="108"/>
+        <image name="delete.backward" catalog="system" width="128" height="102"/>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
